@@ -29,9 +29,6 @@ export default function Footer () {
               </div>
             </div>
           </article>
-          <footer>
-            @2023
-          </footer>
         </>
     )
 }

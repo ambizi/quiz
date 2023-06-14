@@ -10,10 +10,10 @@ export default function Header () {
         <div className='box1'>
           <menu>
             <Image src={imagens.Logo} alt="Logo" width={110} height={50}/>
-            <ul className='tab'>
+            <div className='tab'>
               <a href="#" className='link_c'>Como funciona</a>
-              <a href="#" className='pesquisa'>Participar da Pesquisa</a>
-            </ul>
+              <button className='pesquisa'>Participar da Pesquisa</button>
+            </div>
           </menu>
         </div>
       </header>
