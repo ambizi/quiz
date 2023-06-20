@@ -21,8 +21,19 @@ import Quiz_12 from './Components/Quiz/Quiz_12'
 import quizContext from './Context/quizContext'
 
 export default function Home() {
-  const [getCurrently, setCurrently] = useState<number>(6)
+  const [getCurrently, setCurrently] = useState<number>(1)
   const [getAnsewers6, setAnsewers6] = useState<boolean>(false)
+
+  function setQuiz(){
+    switch(getCurrently) {
+      case 1:
+        return <Quiz_01/>;
+      case 2:
+        return <Quiz_02/>;
+      default:
+        return <Quiz_12/>;
+    }
+  }  
   return (
     <>
       <quizContext.Provider
@@ -30,9 +41,10 @@ export default function Home() {
       >
         <Header/>
         <Article01/>
-        <Quiz_06/>
+        {setQuiz()}
         <Footer/>
       </quizContext.Provider>
     </>
   )
 }
+
