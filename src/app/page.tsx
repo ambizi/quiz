@@ -21,11 +21,12 @@ import Quiz_12 from './Components/Quiz/Quiz_12'
 import quizContext from './Context/quizContext'
 
 export default function Home() {
-  const [getCurrently, setCurrently] = useState<number>(1)
+  const [getCurrently, setCurrently] = useState<number>(6)
+  const [getAnsewers6, setAnsewers6] = useState<boolean>(false)
   return (
     <>
       <quizContext.Provider
-        value={{getCurrently, setCurrently}}
+        value={{getCurrently, setCurrently, getAnsewers6, setAnsewers6}}
       >
         <Header/>
         <Article01/>
