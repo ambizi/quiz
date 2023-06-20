@@ -1,3 +1,5 @@
+"use client"; 
+import React, { useState } from 'react'
 import Image from 'next/image'
 import { imagens } from './uteis/helper'
 import Header from './Components/Header'
@@ -16,14 +18,20 @@ import Quiz_10 from './Components/Quiz/Quiz_10'
 import Quiz_11 from './Components/Quiz/Quiz_11'
 import Quiz_12 from './Components/Quiz/Quiz_12'
 
-export default function Home() {
+import quizContext from './Context/quizContext'
 
+export default function Home() {
+  const [getCurrently, setCurrently] = useState<number>(1)
   return (
     <>
-      <Header/>
-      <Article01/>
-      <Quiz_06/>
-      <Footer/>
+      <quizContext.Provider
+        value={{getCurrently, setCurrently}}
+      >
+        <Header/>
+        <Article01/>
+        <Quiz_06/>
+        <Footer/>
+      </quizContext.Provider>
     </>
   )
 }

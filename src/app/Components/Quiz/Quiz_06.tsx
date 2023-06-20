@@ -1,7 +1,17 @@
+import { useContext } from 'react'
 import Image from 'next/image'
 import { imagens } from '../../uteis/helper'
+import quizContext from '@/app/Context/quizContext'
+
 
 export default function Quiz_06 () {
+
+  const { getCurrently, setCurrently } = useContext(quizContext)
+    
+    const changeQuiz = (nextQuiz : number) => {
+      setCurrently(nextQuiz)
+    }
+
     return(
         <>
           <article className='art2'>
@@ -20,10 +30,11 @@ export default function Quiz_06 () {
                 <Image src={imagens.Gray_Circle} alt="Circle" width={14} height={14} className='Circle_Quiz_11'/>
                 <Image src={imagens.Gray_Circle} alt="Circle" width={14} height={14} className='Circle_Quiz_12'/>
               </div>
+              <h1>{getCurrently}</h1>
               <h2 className='text4'>Sente-se constantemente irritado(a) ou com explosões de raiva sem motivo aparente?</h2>
               <div className='quiz_box'>
-                <button className='quiz06_button1'>Sim</button>
-                <button className='quiz06_button2'>Não</button>
+                <button className='quiz06_button1' onClick={() => changeQuiz(7)}>Avançar</button>
+                <button className='quiz06_button2' onClick={() => changeQuiz(5)}>Voltar</button>
               </div>
             </div>
           </article>
