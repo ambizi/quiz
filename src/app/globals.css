@@ -189,17 +189,17 @@ h1{
 
 
 .quiz01_button1, .quiz01_button2, .quiz01_button3, .quiz01_button4, .quiz01_button5, .quiz01_button6, .quiz01_button7, 
-.quiz02_button1, .quiz02_button2,
-.quiz03_button1, .quiz03_button2,
-.quiz04_button1, .quiz04_button2,
-.quiz05_button1, .quiz05_button2,
-.quiz06_button1, .quiz06_button2,
-.quiz07_button1, .quiz07_button2,
-.quiz08_button1, .quiz08_button2,
-.quiz09_button1, .quiz09_button2,
-.quiz10_button1, .quiz10_button2,
-.quiz11_button1, .quiz11_button2,
-.quiz12_button1, .quiz12_button2{
+.quiz02_yes, .quiz02_no,
+.quiz03_yes, .quiz03_no,
+.quiz04_yes, .quiz04_no,
+.quiz05_yes, .quiz05_no,
+.quiz06_yes, .quiz06_no,
+.quiz07_yes, .quiz07_no,
+.quiz08_yes, .quiz08_no,
+.quiz09_yes, .quiz09_no,
+.quiz10_yes, .quiz10_no,
+.quiz11_yes, .quiz11_no,
+.quiz12_yes, .quiz12_no{
     font-family: 'Outfit-Regular';
     font-size: 1em;
     width: 220px;
