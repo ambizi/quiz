@@ -1,9 +1,9 @@
 import quizContext from "@/app/Context/quizContext";
-import { useContext, useState, Dispatch, SetStateAction } from "react";
+import { useContext, useState } from "react";
 import Image from "next/image";
 import { imagens } from "@/app/uteis/helper";
-import { type } from "os";
-import { createContext } from "vm";
+
+
 
 
 
@@ -100,11 +100,11 @@ export default function Quiz_Result () {
                   <div className="msg">
                     <div>
                         <label htmlFor="name"></label>
-                        <input type="text" value={'---Digite seu nome---'} name="name" id="name" className="name"/>
+                        <input type="text" placeholder={'---Digite seu nome---'} name="name" id="name" className="name"/>
                     </div>
                     <div>
                         <label htmlFor="email"></label>
-                        <input type="email" value={'---Ex: email@gmail.com.br---'} name="name_e-mail" id="name_e-mail" className="name_e-mail" />
+                        <input type="email" placeholder={'---Ex: email@gmail.com.br---'} name="name_e-mail" id="name_e-mail" className="name_e-mail" />
                     </div>
                     <div>
                         <label htmlFor="confirm"></label>
