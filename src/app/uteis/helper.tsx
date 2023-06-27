@@ -5,4 +5,5 @@ export const imagens = {
     Hero_470: '/imagens/hero_470.png',
     Gray_Circle:'/imagens/gray_circle.png',
     Blue_Circle:'/imagens/blue_circle.png',
+    Warning: '/imagens/warning.png'
 }

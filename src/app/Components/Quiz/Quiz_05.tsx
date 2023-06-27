@@ -1,7 +1,17 @@
 import Image from 'next/image'
 import { imagens } from '../../uteis/helper'
+import quizContext from '@/app/Context/quizContext'
+import { useContext } from 'react'
 
 export default function Quiz_05 () {
+
+  const {getCurrently, setCurrently, getAnsewers5, setAnsewers5} = useContext (quizContext)
+
+    function registerQuiz(a:boolean) {
+      setAnsewers5(a)
+      setCurrently(getCurrently + 1)
+    }
+
     return(
         <>
           <article className='art2'>
@@ -22,8 +32,8 @@ export default function Quiz_05 () {
               </div>
               <h2 className='text4'>Sente-se excessivamente preocupado(a), tenso(a) ou ansioso(a) na maioria dos dias?</h2>
               <div className='quiz_box'>
-                <button className='quiz05_button1'>Sim</button>
-                <button className='quiz05_button2'>Não</button>
+                <button className='quiz05_yes' onClick={a => registerQuiz(true)}>Sim</button>
+                <button className='quiz05_no'  onClick={a => registerQuiz(false)}>Não</button>
               </div>
             </div>
           </article>

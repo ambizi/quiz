@@ -1,7 +1,18 @@
 import Image from 'next/image'
 import { imagens } from '../../uteis/helper'
+import quizContext from '@/app/Context/quizContext'
+import { useContext } from 'react'
+
 
 export default function Quiz_09 () {
+
+const { getCurrently, setCurrently, setAnsewers9, getAnsewers9 } = useContext(quizContext)
+
+function registerQuiz (a:boolean){
+  setAnsewers9(a)
+  setCurrently (getCurrently + 1)
+}
+
     return(
         <>
           <article className='art2'>
@@ -22,8 +33,8 @@ export default function Quiz_09 () {
               </div>
               <h2 className='text4'>Tem notado baixo nível de energia ou motivação?</h2>
               <div className='quiz_box'>
-                <button className='quiz09_button1'>Sim</button>
-                <button className='quiz09_button2'>Não</button>
+                <button className='quiz09_yes'onClick={a => registerQuiz(true)}>Sim</button>
+                <button className='quiz09_no'onClick={a => registerQuiz(false)}>Não</button>
               </div>
             </div>
           </article>
