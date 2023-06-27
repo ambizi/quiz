@@ -15,9 +15,8 @@ import Quiz_09 from './Components/Quiz/Quiz_09'
 import Quiz_10 from './Components/Quiz/Quiz_10'
 import Quiz_11 from './Components/Quiz/Quiz_11'
 import Quiz_12 from './Components/Quiz/Quiz_12'
-import setQuiz from './Components/Functions/setQuiz';
 import quizContext from './Context/quizContext'
-import { useContext } from 'react';
+import Quiz_Result from './Components/Quiz/Quiz_Result';
 
 export default function Home() {
 
@@ -34,6 +33,7 @@ export default function Home() {
   const [getAnsewers10, setAnsewers10] = useState<boolean>(false)
   const [getAnsewers11, setAnsewers11] = useState<boolean>(false)
   const [getAnsewers12, setAnsewers12] = useState<boolean>(false)
+  const [getAnsewers13, setAnsewers13] = useState<boolean>(false)
   
 
 
@@ -63,7 +63,9 @@ export default function Home() {
         case 11:
           return <Quiz_11/> 
         case 12:
-          return <Quiz_12/>                         
+          return <Quiz_12/> 
+        case 13:
+          return <Quiz_Result/>                          
         default:
           return <Quiz_12/>   
       }
@@ -75,7 +77,7 @@ export default function Home() {
   return (
     <>
       <quizContext.Provider
-        value={{getCurrently, setCurrently, getAnsewers1, setAnsewers1, getAnsewers2, setAnsewers2, getAnsewers3, setAnsewers3, getAnsewers4, setAnsewers4, getAnsewers5, setAnsewers5, getAnsewers6, setAnsewers6, getAnsewers7, setAnsewers7, getAnsewers8, setAnsewers8, getAnsewers9, setAnsewers9, getAnsewers10, setAnsewers10, getAnsewers11, setAnsewers11, getAnsewers12, setAnsewers12}}
+        value={{getCurrently, setCurrently, getAnsewers1, setAnsewers1, getAnsewers2, setAnsewers2, getAnsewers3, setAnsewers3, getAnsewers4, setAnsewers4, getAnsewers5, setAnsewers5, getAnsewers6, setAnsewers6, getAnsewers7, setAnsewers7, getAnsewers8, setAnsewers8, getAnsewers9, setAnsewers9, getAnsewers10, setAnsewers10, getAnsewers11, setAnsewers11, getAnsewers12, setAnsewers12,getAnsewers13, setAnsewers13}}
       >
         <Header/>
         <Article01/>

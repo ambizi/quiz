@@ -5,10 +5,10 @@ import { useContext } from 'react'
 
 export default function Quiz_12 () {
 
-  const { getCurrently, setCurrently, setAnsewers11, getAnsewers11 } = useContext(quizContext)
+  const { getCurrently, setCurrently, setAnsewers12, getAnsewers12 } = useContext(quizContext)
 
   function registerQuiz (a:boolean){
-    setAnsewers11(a)
+    setAnsewers12(a)
     setCurrently (getCurrently + 1)
   }
     return(

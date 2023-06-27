@@ -11,7 +11,6 @@ export default function Quiz_03 () {
       function registerQuiz (a: boolean) {
         setAnsewers3(a)
         setCurrently(getCurrently + 1)
-        console.log(getCurrently)
       }
 
     return(

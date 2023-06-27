@@ -39,8 +39,14 @@ type QuizProps = {
     
     getAnsewers12: boolean
     setAnsewers12: Dispatch<SetStateAction<boolean>>
+
+    getAnsewers13: boolean
+    setAnsewers13: Dispatch<SetStateAction<number>>
+
 }
 
 const quizContext = createContext({} as QuizProps)
 
+
 export default quizContext
+

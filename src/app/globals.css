@@ -34,7 +34,7 @@ header{
 }
 
 menu{
-    max-width: 100vw;
+    max-width: 98vw;
     display: flex;
     justify-content: space-between;
     background-color: #F5F5F5;
@@ -134,12 +134,12 @@ h1{
 }
 
 .hero_box{
-    max-width: 100%;
+    max-width: 98%;
     overflow: hidden;
 }
 
 .hero {
-    max-width: 100%;
+    max-width: 98%;
     height: auto;
   }
 
@@ -214,8 +214,114 @@ h1{
 }
 
 
+.art2_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #93beff49;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.text4_1{
+    margin-bottom: 50px;
+    padding-top: 30px;
+    font-family: 'FiraSansCondensed-Medium';
+    font-size: 2em;
+    font-weight: normal;
+    max-width: 98vw;
+}
+
+
+.box_result{
+    display: flex;
+    max-width: 300px;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 5px;
+}
+
+.text_result1{
+    display: flex;
+    padding-bottom: 30px;
+    font-family: 'Outfit-Regular';
+}
+
+
+.text_result2{
+    display: flex;
+    padding-bottom: 30px;
+    font-family: 'Outfit-Regular';
+}
+
+.warning{
+    padding-right: 15px;
+}
+
+
+.e-mail{
+    display: flex;
+    width: 300px;
+    align-items: center;
+    font-family: 'Outfit-Regular';
+    font-size: 1em;
+    font-weight: normal;
+    color: #7bacf4;
+    border: 2px solid #7bacf4;
+    border-radius: 5px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #FfFfFf;
+}
+
+.name{
+    display: flex;
+    width: 230px;
+    align-items: center;
+    font-family: 'Outfit-Regular';
+    font-size: 1em;
+    font-weight: normal;
+    color: #6a6a6a46;
+    border: 2px solid #7bacf4;
+    border-radius: 5px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #FfFfFf;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.name_e-mail{
+    display: flex;
+    width: 230px;
+    align-items: center;
+    font-family: 'Outfit-Regular';
+    font-size: 1em;
+    font-weight: normal;
+    color: #6a6a6a46;
+    border: 2px solid #7bacf4;
+    border-radius: 5px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #FfFfFf;
+    text-align: center;
+}
+
+
 .confirm{
-    width: 220px;
+    width: 300px;
     margin-top: 20px;
     border: none;
     border-radius: 5px;
@@ -226,6 +332,9 @@ h1{
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+
+
 
 /*//////////////////////FOOTER//////////////////////////////////*/
 
@@ -250,7 +359,7 @@ h1{
     font-family: 'Outfit-Regular';
     font-size: 1.2em;
     color: #6A6A6A;
-    width: 100%;
+    width: 98%;
     padding-top: 15px;
 }
 
