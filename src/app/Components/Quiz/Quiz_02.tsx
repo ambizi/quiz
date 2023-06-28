@@ -33,8 +33,8 @@ export default function Quiz_02 () {
               </div>
               <h2 className='text4'>Você tem se sentido triste, desanimado(a) ou deprimido(a) com frequência nos últimos meses?</h2>
               <div className='quiz_box'>
-                <button className='quiz02_yes' onClick={a =>registerQuiz(true)}>Sim</button>
-                <button className='quiz02_no'  onClick={a =>registerQuiz(false)} >Não</button>
+                <button className='quiz02_yes button_answers' onClick={a =>registerQuiz(true)}>Sim</button>
+                <button className='quiz02_no button_answers'  onClick={a =>registerQuiz(false)} >Não</button>
               </div>
             </div>
           </article>

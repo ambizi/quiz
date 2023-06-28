@@ -32,8 +32,8 @@ export default function Quiz_05 () {
               </div>
               <h2 className='text4'>Sente-se excessivamente preocupado(a), tenso(a) ou ansioso(a) na maioria dos dias?</h2>
               <div className='quiz_box'>
-                <button className='quiz05_yes' onClick={a => registerQuiz(true)}>Sim</button>
-                <button className='quiz05_no'  onClick={a => registerQuiz(false)}>Não</button>
+                <button className='quiz05_yes button_answers' onClick={a => registerQuiz(true)}>Sim</button>
+                <button className='quiz05_no button_answers'  onClick={a => registerQuiz(false)}>Não</button>
               </div>
             </div>
           </article>

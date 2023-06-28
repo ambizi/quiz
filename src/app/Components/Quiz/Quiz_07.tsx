@@ -36,8 +36,8 @@ function registerQuiz (a:boolean){
               </div>
               <h2 className='text4'>Tem tido pensamentos recorrentes de morte ou suicídio?</h2>
               <div className='quiz_box'>
-                <button className='quiz07_yes' onClick={a => registerQuiz(true)}>Sim</button>
-                <button className='quiz07_no' onClick={b => registerQuiz(false)}>Não</button>
+                <button className='quiz07_yes button_answers' onClick={a => registerQuiz(true)}>Sim</button>
+                <button className='quiz07_no button_answers' onClick={b => registerQuiz(false)}>Não</button>
               </div>
             </div>
           </article>

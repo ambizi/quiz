@@ -34,8 +34,8 @@ export default function Quiz_11 () {
               </div>
               <h2 className='text4'>Você já fez algum tipo de tratamento com Psicólogos / Psiquiatras ou afins?</h2>
               <div className='quiz_box'>
-                <button className='quiz11_yes' onClick={a => registerQuiz(true)}>Sim</button>
-                <button className='quiz11_no'onClick={a => registerQuiz(false)}>Não</button>
+                <button className='quiz11_yes button_answers' onClick={a => registerQuiz(true)}>Sim</button>
+                <button className='quiz11_no button_answers'onClick={a => registerQuiz(false)}>Não</button>
               </div>
             </div>
           </article>

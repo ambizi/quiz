@@ -33,8 +33,8 @@ export default function Quiz_10 () {
               </div>
               <h2 className='text4'>Tem experimentado sensações de pânico, como batimentos cardíacos acelerados, falta de ar ou tonturas frequentes?</h2>
               <div className='quiz_box'>
-                <button className='quiz10_yes'onClick={a => registerQuiz(true)}>Sim</button>
-                <button className='quiz10_no'onClick={a => registerQuiz(false)}>Não</button>
+                <button className='quiz10_yes button_answers'onClick={a => registerQuiz(true)}>Sim</button>
+                <button className='quiz10_no button_answers'onClick={a => registerQuiz(false)}>Não</button>
               </div>
             </div>
           </article>

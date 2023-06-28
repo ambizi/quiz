@@ -41,7 +41,7 @@ type QuizProps = {
     setAnsewers12: Dispatch<SetStateAction<boolean>>
 
     getAnsewers13: boolean
-    setAnsewers13: Dispatch<SetStateAction<number>>
+    setAnsewers13: Dispatch<SetStateAction<boolean>>
 
 }
 

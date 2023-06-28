@@ -14,19 +14,7 @@ export default function Quiz_01 () {
     setAnsewers1(result)
     setCurrently(getCurrently + 1)
   }
-
-
-  /*const circleQuiz = () =>{
-    for (var cont = 1; cont < 12; cont++) {
-        if (cont === getCurrently){
-        return <Image src={imagens.Blue_Circle} alt="Circle" width={14} height={14} className={`circle_Quiz_${cont}`}/>
-      } else{
-        return <Image src={imagens.Gray_Circle} alt="Circle" width={14} height={14} className={`circle_Quiz_${cont}`}/>
-      }
-    }
-    } */
-
-
+  
     return(
         <>
           <article className='art2'>
@@ -47,13 +35,13 @@ export default function Quiz_01 () {
               </div>
               <h2 className='text4'>Qual a sua idade?</h2>
               <div className='quiz_box'>
-                <button className='quiz01_button1'onClick={()=>registerQuiz('-18') }>-18</button>
-                <button className='quiz01_button2' onClick={()=>registerQuiz('18 a 25')}>18 a 25</button>
-                <button className='quiz01_button3'onClick={()=>registerQuiz('26 a 35')}>26 a 35</button>
-                <button className='quiz01_button4'onClick={()=>registerQuiz('36 a 45')}>36 a 45</button>
-                <button className='quiz01_button5'onClick={()=>registerQuiz('45 a 60')}>46 a 60</button>
-                <button className='quiz01_button6'onClick={()=>registerQuiz('61 a 70')}>61 a 70</button>
-                <button className='quiz01_button7'onClick={()=>registerQuiz('+70')}>+70</button>
+                <button className='quiz01_button1 button_answers'onClick={()=>registerQuiz('-18') }>-18</button>
+                <button className='quiz01_button2 button_answers' onClick={()=>registerQuiz('18 a 25')}>18 a 25</button>
+                <button className='quiz01_button3 button_answers'onClick={()=>registerQuiz('26 a 35')}>26 a 35</button>
+                <button className='quiz01_button4 button_answers'onClick={()=>registerQuiz('36 a 45')}>36 a 45</button>
+                <button className='quiz01_button5 button_answers'onClick={()=>registerQuiz('45 a 60')}>46 a 60</button>
+                <button className='quiz01_button6 button_answers'onClick={()=>registerQuiz('61 a 70')}>61 a 70</button>
+                <button className='quiz01_button7 button_answers'onClick={()=>registerQuiz('+70')}>+70</button>
               </div>
             </div>
           </article>

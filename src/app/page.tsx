@@ -35,8 +35,6 @@ export default function Home() {
   const [getAnsewers12, setAnsewers12] = useState<boolean>(false)
   const [getAnsewers13, setAnsewers13] = useState<boolean>(false)
   
-
-
   function setQuiz(){
   
       switch(getCurrently) {
@@ -70,9 +68,6 @@ export default function Home() {
           return <Quiz_12/>   
       }
     }
-
-    
-
 
   return (
     <>

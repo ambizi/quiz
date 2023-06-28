@@ -34,8 +34,8 @@ function registerQuiz (a:boolean){
               </div>
               <h2 className='text4'>Tem evitado atividades sociais ou hobbies que costumava desfrutar?</h2>
               <div className='quiz_box'>
-                <button className='quiz08_yes' onClick={a=>registerQuiz(true)}>Sim</button>
-                <button className='quiz08_no' onClick={b=>registerQuiz(false)}>Não</button>
+                <button className='quiz08_yes button_answers' onClick={a=>registerQuiz(true)}>Sim</button>
+                <button className='quiz08_no button_answers' onClick={b=>registerQuiz(false)}>Não</button>
               </div>
             </div>
           </article>

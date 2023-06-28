@@ -33,8 +33,8 @@ function registerQuiz (a:boolean){
               </div>
               <h2 className='text4'>Tem notado baixo nível de energia ou motivação?</h2>
               <div className='quiz_box'>
-                <button className='quiz09_yes'onClick={a => registerQuiz(true)}>Sim</button>
-                <button className='quiz09_no'onClick={a => registerQuiz(false)}>Não</button>
+                <button className='quiz09_yes button_answers'onClick={a => registerQuiz(true)}>Sim</button>
+                <button className='quiz09_no button_answers'onClick={a => registerQuiz(false)}>Não</button>
               </div>
             </div>
           </article>
