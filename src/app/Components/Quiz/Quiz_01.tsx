@@ -2,8 +2,8 @@ import Image from 'next/image'
 import { imagens } from '../../uteis/helper'
 import quizContext from '@/app/Context/quizContext'
 import {useContext} from 'react'
-import { useState } from 'react'
-import Quiz_02 from './Quiz_02'
+
+
 
 
 export default function Quiz_01 () {
