@@ -2,13 +2,59 @@ import quizContext from "@/app/Context/quizContext";
 import { useContext, useState } from "react";
 import Image from "next/image";
 import { imagens } from "@/app/uteis/helper";
+import { useForm } from "react-hook-form";
+import { type } from "os";
+import axios from "axios";
+import { Console } from "console";
+
+type propsInputs = {
+    Name: string,
+    Email: string
+}
 
 export default function Quiz_Result () {
 
-    const {getCurrently, getAnsewers2, getAnsewers3, getAnsewers4, getAnsewers5, getAnsewers6, getAnsewers7, getAnsewers8, getAnsewers9, getAnsewers10, getAnsewers11, getAnsewers12, getAnsewers13, setAnsewers13} = useContext (quizContext)
+    const {getCurrently, getAnsewers1, getAnsewers2, getAnsewers3, getAnsewers4, getAnsewers5, getAnsewers6, getAnsewers7, getAnsewers8, getAnsewers9, getAnsewers10, getAnsewers11, getAnsewers12, getAnsewers13, setAnsewers13} = useContext (quizContext)
 
     const [getShow, setShow] = useState <boolean>(false)
 
+    const {register, handleSubmit} = useForm<propsInputs>()
+
+    const [isLoad, setLoad] = useState <boolean> (false)
+
+    const onSubmit = async (data: propsInputs) => {
+
+        const userData ={
+            Name: data.Name,
+            Email: data.Email,
+            Quiz_01: getAnsewers1,
+            Quiz_02: getAnsewers2,
+            Quiz_03: getAnsewers3,
+            Quiz_04: getAnsewers4,
+            Quiz_05: getAnsewers5,
+            QUiz_06: getAnsewers6,
+            Quiz_07: getAnsewers7,
+            Quiz_08: getAnsewers8,
+            Quiz_09: getAnsewers9,
+            Quiz_10: getAnsewers10,
+            Quiz_11: getAnsewers11,
+            Quiz_12: getAnsewers12  
+        }
+
+
+        setLoad(true)
+        
+
+        setTimeout( async function () {
+            const addPost = await axios.post('https://suamarcaemmovimento.com.br/api/register-quiz.php/' , userData)
+                .then(function (response: any) {
+                    setShow(true)
+                })
+            }, 3000)
+
+
+    }
+ 
     function somaQuizz(){
 
         let quiz2: number
@@ -98,32 +144,62 @@ export default function Quiz_Result () {
         } else {return <p className="text_result2">Que tal uma relaxada!? Começe mudando sua rotina, exercícios físicos, boa alimentação e higiene do sono. Alterar alguns dos nossos maus habitos, muitas vezes já é o sufientes para uma melhora significativa no nosso estado mental! </p>}
     }
 
+
+    function boxResut () {
+        if(!getShow) {
+            return <div className='box3'>
+                        <h2 className='text4_1'>Resultado</h2>
+                        <div className="box_result">
+                                <div className='quiz_box2'>
+                                    {msg()}
+                                </div>
+                                <form onSubmit={handleSubmit(onSubmit)} className="msg">
+                                        <div>
+                                            <label htmlFor="name"></label>
+                                            <input type="text" placeholder={'---Digite seu nome---'} {...register('Name', { required: true })} id="name" className="name"/>
+                                        </div>
+                                        <div>
+                                            <label htmlFor="email"></label>
+                                            <input 
+                                                type="email" 
+                                                placeholder={'---Ex: email@gmail.com.br---'} {...register('Email', { required: true })} 
+                                                id="name_e-mail" 
+                                                className="name_e-mail" />
+                                        </div>
+                                        <div className="botton">
+                                            <label htmlFor="confirm"></label>
+                                            <input
+                                                disabled={!isLoad ? false : true} 
+                                                type="submit" 
+                                                name="confirm" 
+                                                id="confirm" 
+                                                value={!isLoad ?'Enviar' : 'Carregando...' } 
+                                                className="confirm"/>
+                                        </div>
+                                </form>
+                        </div>
+                    </div>
+                    }
+    }
+
+
+    function boxSendEmail () {
+        if(getShow) {
+            return<div className="box3">                
+                        <div className="box_send_email">
+                            <p>E-mail enviado com sucessso!</p>
+                        </div>
+                    </div>
+                    }
+                }
+
+
     return(
         <>
             <article className='art2_1'>
-             <div className='box3'>
-                <h2 className='text4_1'>Resultado</h2>
-              <div className="box_result">
-                  <div className='quiz_box2'>
-                    {msg()}
-                  </div>
-                  <div className="msg">
-                    <div>
-                        <label htmlFor="name"></label>
-                        <input type="text" placeholder={'---Digite seu nome---'} name="name" id="name" className="name"/>
-                    </div>
-                    <div>
-                        <label htmlFor="email"></label>
-                        <input type="email" placeholder={'---Ex: email@gmail.com.br---'} name="name_e-mail" id="name_e-mail" className="name_e-mail" />
-                    </div>
-                    <div>
-                        <label htmlFor="confirm"></label>
-                        <input type="submit" name="confirm" id="confirm" value="Enviar" className="confirm"/>
-                    </div>
-                  </div>
-              </div>
-            </div>
-          </article>
+                {boxResut()}
+                {boxSendEmail()}
+            </article>
         </>
 
     )

@@ -353,6 +353,15 @@ h1{
 }
 
 
+.box_send_email{
+    background-color: #80d240;
+    padding: 30px;
+    color:#FFFFFF;
+    border-radius: 5px;
+    font-family: 'Outfit-Regular';
+}
+
+
 
 
 /*//////////////////////FOOTER//////////////////////////////////*/
