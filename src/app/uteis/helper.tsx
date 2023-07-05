@@ -5,5 +5,16 @@ export const imagens = {
     Hero_470: '/imagens/hero_470.png',
     Gray_Circle:'/imagens/gray_circle.png',
     Blue_Circle:'/imagens/blue_circle.png',
-    Warning: '/imagens/warning.png'
+    Warning: '/imagens/warning.png',
+    Bipolar: '/imagens/bipolar.png',
+    Goal: '/imagens/goal.png',
+    Growing: '/imagens/growing.png',
+    Therapy: '/imagens/therapy.png',
+    Hand_Phone: '/imagens/hand_phone.png',
+    Feature: '/imagens/cta.png',
+    Therapy_2: '/imagens/therapy_2.png',
+    Talk_1: '/imagens/talk_1.png',
+    Talk_2: '/imagens/talk_1.png',
+    Star_1: '/imagens/star_1.png',
+    Star_2: '/imagens/star_2.png',
 }

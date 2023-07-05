@@ -156,13 +156,19 @@ export default function Quiz_Result () {
                                 <form onSubmit={handleSubmit(onSubmit)} className="msg">
                                         <div>
                                             <label htmlFor="name"></label>
-                                            <input type="text" placeholder={'---Digite seu nome---'} {...register('Name', { required: true })} id="name" className="name"/>
+                                            <input 
+                                                type="text" 
+                                                placeholder={'---Digite seu nome---'} 
+                                                {...register('Name', { required: true })} 
+                                                id="name" 
+                                                className="name"/>
                                         </div>
                                         <div>
                                             <label htmlFor="email"></label>
                                             <input 
                                                 type="email" 
-                                                placeholder={'---Ex: email@gmail.com.br---'} {...register('Email', { required: true })} 
+                                                placeholder={'---Ex: email@gmail.com.br---'} 
+                                                {...register('Email', { required: true })} 
                                                 id="name_e-mail" 
                                                 className="name_e-mail" />
                                         </div>

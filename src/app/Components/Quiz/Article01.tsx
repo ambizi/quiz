@@ -1,4 +1,4 @@
-import {imagens} from '../uteis/helper'
+import {imagens} from '../../uteis/helper'
 import Image from 'next/image'
 
 export default function Article01 () {

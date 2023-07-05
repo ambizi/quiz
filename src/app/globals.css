@@ -153,302 +153,203 @@ h1{
     height: auto;
   }
 
-/*//////////////////////QUIZ//////////////////////////////////*/
 
 
-.box3{
+/*//////////////////////ARTICLE1H//////////////////////////////////*/
+
+
+.box_article1{
     width: 1280px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+
+.article_title{
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
 }
 
-.circles{
-    display: flex;
-    width: 40%;
-    justify-content: space-between;
-}
-
-
-.art2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #93beff49;
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-
-
-.text4{
-    margin-bottom: 30px;
-    padding-top: 70px;
+.title1{
     font-family: 'FiraSansCondensed-Medium';
-    font-size: 1.5em;
+    font-size: 2.45em;
     font-weight: normal;
-    max-width: 98vw;
 }
 
-
-.quiz_box{
-    display: flex;
-    flex-direction: column;
-    max-width: 100vw;
-}
-
-
-.quiz01_button1, .quiz01_button2, .quiz01_button3, .quiz01_button4, .quiz01_button5, .quiz01_button6, .quiz01_button7, 
-.quiz02_yes, .quiz02_no,
-.quiz03_yes, .quiz03_no,
-.quiz04_yes, .quiz04_no,
-.quiz05_yes, .quiz05_no,
-.quiz06_yes, .quiz06_no,
-.quiz07_yes, .quiz07_no,
-.quiz08_yes, .quiz08_no,
-.quiz09_yes, .quiz09_no,
-.quiz10_yes, .quiz10_no,
-.quiz11_yes, .quiz11_no,
-.quiz12_yes, .quiz12_no{
+.title2{
     font-family: 'Outfit-Regular';
-    font-size: 1em;
-    width: 220px;
-    margin-bottom: 15px;
-    background-color: white;
-    border: none;
-    border-radius: 5px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.button_answers{
-    cursor:pointer;
-}
-
-.button_answers:hover{
-    background-color: #9BB5F3;
-    color: #fff;
-    font-weight: bold;
-}
-
-.art2_1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #93beff49;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-
-.text4_1{
-    margin-bottom: 50px;
-    padding-top: 30px;
-    font-family: 'FiraSansCondensed-Medium';
-    font-size: 2em;
+    font-size: 1.45em;
     font-weight: normal;
-    max-width: 98vw;
-}
-
-
-.box_result{
-    display: flex;
-    max-width: 300px;
-    flex-direction: column;
-    background-color: #FFFFFF;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 25px;
-    padding-right: 25px;
-    border-radius: 5px;
-}
-
-.text_result1{
-    display: flex;
-    padding-bottom: 30px;
-    font-family: 'Outfit-Regular';
-}
-
-
-.text_result2{
-    display: flex;
-    padding-bottom: 30px;
-    font-family: 'Outfit-Regular';
-}
-
-.warning{
-    padding-right: 15px;
-}
-
-
-.e-mail{
-    display: flex;
-    width: 300px;
-    align-items: center;
-    font-family: 'Outfit-Regular';
-    font-size: 1em;
-    font-weight: normal;
-    color: #7bacf4;
-    border: 2px solid #7bacf4;
-    border-radius: 5px;
-    padding-left: 35px;
-    padding-right: 35px;
+    color: #6A6A6A;
     padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #FfFfFf;
 }
 
-.name{
+.box_artucle_link{
+    margin-top: 50px;
+    background-color: #ffffff;
+    border: 1px #e3e1e1 solid;
+    border-radius: 10px;
+    box-shadow: -3px -3px 16px #e3e1e1;
+}
+
+
+.box_link{
     display: flex;
-    width: 230px;
     align-items: center;
-    font-family: 'Outfit-Regular';
-    font-size: 1em;
-    font-weight: normal;
-    color: #6a6a6a46;
-    border: 2px solid #7bacf4;
-    border-radius: 5px;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #FfFfFf;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.name_e-mail{
-    display: flex;
-    width: 230px;
-    align-items: center;
-    font-family: 'Outfit-Regular';
-    font-size: 1em;
-    font-weight: normal;
-    color: #6a6a6a46;
-    border: 2px solid #7bacf4;
-    border-radius: 5px;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #FfFfFf;
-    text-align: center;
-}
-
-
-.confirm{
-    width: 300px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #93beff;
-    color: white;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-
-.box_send_email{
-    background-color: #80d240;
-    padding: 30px;
-    color:#FFFFFF;
-    border-radius: 5px;
-    font-family: 'Outfit-Regular';
-}
-
-
-
-
-/*//////////////////////FOOTER//////////////////////////////////*/
-
-.box4{
-    width: 1280px;
-    display: flex;
-    justify-items: center;
-    overflow: hidden;
-}
-
-
-.art3{
-    display: flex;
     justify-content: center;
-    background-color: #F5F5F5;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-size: 16px;
+    padding-left: 220px;
+    padding-right: 220px;
+    margin-top: 50px;
 }
 
-
-.text5{
-    font-family: 'Outfit-Regular';
-    font-size: 17px;
-    color: #6A6A6A;
-    width: 98%;
-    padding-top: 15px;
-}
-
-
-.brand{
+.link{
     display: flex;
     flex-direction: column;
-    width: 25%;
-    padding-left: 50px; 
-}
-
-
-.who{
-    display: flex;
-    flex-direction: column;
-    width: 25%;
     align-items: center;
-    text-align: left;
-}
-
-
-.content{
-    display: flex;
-    flex-direction: column;
     width: 25%;
-    align-items: center;
-    text-align: left;
 }
 
-
-.topic{
+.box_img{
     display: flex;
-    flex-direction: column;
-    width: 25%;
-    align-items: center;
-    text-align: left;
-    padding-right: 50px;
 }
 
+.number{
+    color: #e3e1e1;
+    font-family: 'FiraSansCondensed-Medium';
+    justify-content: space-between;
+    padding-right: 5px;
+    font-size: 1.5em;
+}
 
-.link_f{
-    font-family: 'Outfit-Regular';
-    width: 68%;
-    font-size: 17px;
+.bipolar, .therapy, .growing, .goal{
+    padding-top: 10px;
     text-decoration: none;
-    color: #6A6A6A;
-    padding-bottom: 15px;
-}
-
-
-.link_fo{
     font-family: 'Outfit-Medium';
-    font-size: 1.2em;
-    text-decoration: none;
-    width: 68%;
-    color: black;
-    font-weight: bolder;
-    padding-bottom: 30px;
-    padding-top: 15px;
+    color: #000000;
+    font-size: 1.25em;
 }
+
+.box_link_text{
+    display: flex;
+    padding-top: 40px;
+    padding-left: 100px;
+}
+
+.box_text{
+    padding-top: 30px;
+}
+
+.text_link1, .text_link2 {
+    font-size: 1.45em;
+    font-family: 'Outfit-Regular';
+    width: 70%;
+}
+
+.text_link1{
+    padding-top: 10px;
+}
+
+.text_link2{
+    padding-top: 30px;
+    padding-bottom: 35px;
+}
+
+.want{
+    font-size: 1.25em;
+    color: #93beff;
+    font-family: 'Outfit-Medium';
+}
+
+.hand_phone{
+    margin-bottom: -4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*//////////////////////////////////MOBILE/////////////////////////////////////*/
@@ -508,83 +409,6 @@ h1{
         height: auto;
       }
 
-  
-/*///////////////////QUIZ//////////////////////////*/
 
-    .box3{
-        max-width: 100%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        overflow: hidden;
-    }
-
-    .circles{
-        display: flex;
-        width: 80%;
-        justify-content: space-between;
-    }
-
-    .text4{
-        max-width: 97%;
-        overflow: hidden;
-    }
-
-/*///////////////////FOOTER///////////////////////////////*/
-
-    .box4{
-        display: flex;
-        justify-items: center;
-        max-width: 100%;
-        align-self: baseline;
-        flex-wrap: wrap;
-        padding-left: 25px;
-    }
-
-    .text5{
-        font-family: 'Outfit-Regular';
-        font-size: 1em;
-        color: #6A6A6A;
-        max-width: 100%;
-        padding-top: 15px;
-        overflow: hidden;
-    }
-
-    .brand{
-        display: flex;
-        align-items: baseline;
-        flex-direction: column;
-        padding-bottom: 40px;
-        width: 50%; 
-        padding-left: 0px;
-        overflow: hidden;
-    }
-
-    .who{
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-        padding-bottom: 40px;
-        width: 50%;
-        font-size: 0.9em;
-    }
-    
-    .content{
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-        width: 50%;
-        font-size: 0.9em; 
-    }
-    
-    .topic{
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-        width: 50%; 
-        padding-right: 0px;
-        font-size: 0.9em;
-    }
 
   }
