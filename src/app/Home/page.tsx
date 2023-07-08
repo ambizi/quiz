@@ -6,6 +6,8 @@ import Article01 from '../Components/Quiz/Article01'
 import ArticleH1 from '../Components/Home/ArticleH1';
 import ArticleH2 from '../Components/Home/ArticleH2';
 import ArticleH3 from '../Components/Home/ArticleH3';
+import ArticleH4 from '../Components/Home/ArticleH4';
+import ArticleH5 from '../Components/Home/ArticleH5';
 
 
 
@@ -19,6 +21,8 @@ export default function Home() {
         <ArticleH1/>
         <ArticleH2/>
         <ArticleH3/>
+        <ArticleH4/>
+        <ArticleH5/>
     </>
   )
 }

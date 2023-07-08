@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function ArticleH1 () {
     return(
         <>  
-            <article>
+            <article className="articleh1">
                 <div className="box_article1">
                     <div className="article_title">
                         <h2 className="title1">Ciclo da Saúde Mental</h2>

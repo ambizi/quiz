@@ -1,5 +1,6 @@
 export const imagens = {
     Logo: '/imagens/Logo.svg',
+    Logo_2: '/imagens/Logo_2.svg',
     Hero: '/imagens/hero.png',
     Arrow: '/imagens/right-arrow.png',
     Hero_470: '/imagens/hero_470.png',
@@ -12,9 +13,13 @@ export const imagens = {
     Therapy: '/imagens/therapy.png',
     Hand_Phone: '/imagens/hand_phone.png',
     Feature: '/imagens/cta.png',
-    Therapy_2: '/imagens/therapy_2.png',
     Talk_1: '/imagens/talk_1.png',
-    Talk_2: '/imagens/talk_1.png',
+    Talk_2: '/imagens/talk_2.png',
     Star_1: '/imagens/star_1.png',
     Star_2: '/imagens/star_2.png',
+    Arrow_Up: '/imagens/arrow_up.png',
+    Face_1: '/imagens/face1.png',
+    Therapy_1: '/imagens/therapy_1.png',
+    Ellipse: '/imagens/ellipse.png',
+    Check: '/imagens/check.png'
 }
