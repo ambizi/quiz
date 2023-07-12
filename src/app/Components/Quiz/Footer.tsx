@@ -7,7 +7,7 @@ export default function Footer () {
           <article className='art3'>
             <div className='box4'>
               <div className='brand'>
-                <Image src={imagens.Logo} alt="Logo" width={110} height={50}/>
+                <Image src={imagens.Logo_3} alt="Logo" width={110} height={50}/>
                 <p className='text5'>Realizamos com precisão a triagem primária usando inteligencia artificial.</p>
               </div>
               <div className='who'>

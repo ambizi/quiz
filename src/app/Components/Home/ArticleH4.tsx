@@ -12,36 +12,38 @@ export default function ArticleH4 () {
                     </div>
                     <div className="box_data">
                         <div className="box_data_number">
-                            <p className="data_number">71%</p>
+                            <p className="data_number"><span className="simbol_h4">+</span>71%</p>
                             <p className="data_number_text">de melhora clínica dos colaboradores após a conclusão do programa.</p>
                         </div>
                         <div className="box_text_data">
                             <Image src={imagens.Check} alt='Check' width={30} height={30}/>
-                            <p className="text_data">De melhora clínica dos colaboradores após a conclusão do programa.de melhora clínica dos colaboradores após a conclusão do programa <span>80% </span>elhora clínica dos colaboradores após a conclusão do programa.</p>
+                            <p className="text_data">De melhora clínica dos colaboradores após a conclusão do programa.de melhora clínica dos colaboradores após a conclusão do programa <span className="digit_h4">80% </span>elhora clínica dos colaboradores após a conclusão do programa.</p>
                         </div>
                     </div>
                     <div className="line"></div>
                     <div className="box_data">
                         <div className="box_data_number">
-                            <p className="data_number">71%</p>
+                            <p className="data_number"><span className="simbol_h4">+</span>71%</p>
                             <p className="data_number_text">de melhora clínica dos colaboradores após a conclusão do programa.</p>
                         </div>
                         <div className="box_text_data">
                             <Image src={imagens.Check} alt='Check' width={30} height={30}/>
-                            <p className="text_data">De melhora clínica dos colaboradores após a conclusão do programa.de melhora clínica dos colaboradores <span>67%</span> após a conclusão do programa.de melhora clínica dos colaboradores após a conclusão do programa.</p>
+                            <p className="text_data">De melhora clínica dos colaboradores após a conclusão do programa.de melhora clínica dos colaboradores <span className="digit_h4">67%</span> após a conclusão do programa de melhora clínica dos colaboradores após a conclusão do programa.</p>
                         </div>
                     </div>
                     <div className="line"></div>
                     <div className="box_data">
                         <div className="box_data_number">
-                            <p className="data_number">71%</p>
+                            <p className="data_number"><span className="simbol_h4">+</span>71%</p>
                             <p className="data_number_text">de melhora clínica dos colaboradores após a conclusão do programa.</p>
                         </div>
                         <div className="box_text_data">
                             <Image src={imagens.Check} alt='Check' width={30} height={30}/>
-                            <p className="text_data">De melhora clínica dos colaboradores após a conclusão do programa.de <span>32%</span> melhora clínica dos colaboradores após a conclusão do programa.de melhora clínica dos colaboradores após a conclusão do programa.</p>
+                            <p className="text_data">De melhora clínica dos colaboradores após a conclusão do programa.de <span className="digit_h4">32%</span> melhora clínica dos colaboradores após a conclusão do programa de melhora clínica dos colaboradores após a conclusão do programa.</p>
                         </div>
                     </div>
+                    <Image src={imagens.Circle_Gradient} alt='Circle Gradient' width={818} height={800} className="circle_5"/>
+                    <Image src={imagens.Circle_Gradient} alt='Circle Gradient' width={818} height={800} className="circle_6"/>
                 </div>
             </article>
         </>

@@ -1,6 +1,7 @@
 export const imagens = {
     Logo: '/imagens/Logo.svg',
     Logo_2: '/imagens/Logo_2.svg',
+    Logo_3: '/imagens/Logo_3.svg',
     Hero: '/imagens/hero.png',
     Arrow: '/imagens/right-arrow.png',
     Hero_470: '/imagens/hero_470.png',
@@ -21,5 +22,16 @@ export const imagens = {
     Face_1: '/imagens/face1.png',
     Therapy_1: '/imagens/therapy_1.png',
     Ellipse: '/imagens/ellipse.png',
-    Check: '/imagens/check.png'
+    Check: '/imagens/check.png',
+    Arrow_Blue: '/imagens/arrow_blue.png',
+    Profession1: '/imagens/profession1.png',
+    Profession2: '/imagens/profession2.png',
+    Profession3: '/imagens/profession3.png',
+    Circle_Gradient: '/imagens/gradient.png',
+    Google_Play: '/imagens/google_play.png',
+    App_Store: '/imagens/app_store.png',
+    News_1: '/imagens/news_1.png',
+    News_2: '/imagens/news_2.png',
+    News_3: '/imagens/news_3.png',
+    Button_Plus: '/imagens/button_plus.png'
 }

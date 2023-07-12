@@ -18,6 +18,8 @@ export default function Article01 () {
               <div className='hero_box'>
                 <Image src={imagens.Hero} alt="Hero" width={542} height={420} className='hero'/>
               </div>
+              <Image src={imagens.Circle_Gradient} alt='Circle Gradient' width={750} height={750} className="circle_1"/>
+              <Image src={imagens.Circle_Gradient} alt='Circle Gradient' width={750} height={750} className="circle_2"/>
             </div>
           </article>
         </>
