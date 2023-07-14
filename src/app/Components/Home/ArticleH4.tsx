@@ -42,8 +42,6 @@ export default function ArticleH4 () {
                             <p className="text_data">De melhora clínica dos colaboradores após a conclusão do programa.de <span className="digit_h4">32%</span> melhora clínica dos colaboradores após a conclusão do programa de melhora clínica dos colaboradores após a conclusão do programa.</p>
                         </div>
                     </div>
-                    <Image src={imagens.Circle_Gradient} alt='Circle Gradient' width={818} height={800} className="circle_5"/>
-                    <Image src={imagens.Circle_Gradient} alt='Circle Gradient' width={818} height={800} className="circle_6"/>
                 </div>
             </article>
         </>

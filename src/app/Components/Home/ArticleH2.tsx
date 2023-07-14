@@ -27,8 +27,6 @@ export default function ArticleH2 () {
                             <p className="text_blue">Por meio de algoritmos avançados e análise.</p>
                         </div>
                     </div>
-                    <Image src={imagens.Circle_Gradient} alt='Circle Gradient' width={800} height={800} className="circle_3"/>
-                    <Image src={imagens.Circle_Gradient} alt='Circle Gradient' width={800} height={800} className="circle_4"/>
                 </div>
             </article>
         </>

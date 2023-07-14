@@ -1,6 +1,4 @@
 "use client";
-import style from './Style/Quiz.module.css' 
-import React, { useState } from 'react'
 import Header from '../Components/Quiz/Header'
 import Article01 from '../Components/Quiz/Article01'
 import ArticleH1 from '../Components/Home/ArticleH1';
@@ -17,6 +15,8 @@ import Footer from '../Components/Quiz/Footer';
 
 
 export default function Home() {
+
+  
 
   return (
     <>
