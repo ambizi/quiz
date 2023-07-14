@@ -11,13 +11,7 @@ import ArticleH7 from '../Components/Home/ArticleH7';
 import ArticleH8 from '../Components/Home/ArticleH8';
 import Footer from '../Components/Quiz/Footer';
 
-
-
-
 export default function Home() {
-
-  
-
   return (
     <>
         <Header/>
