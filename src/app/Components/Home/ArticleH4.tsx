@@ -1,6 +1,4 @@
-import Image from "next/image"
-import { imagens } from "@/app/uteis/helper"
-import BoxWhy, { BoxWhyType } from "./BoxWhy"
+import BoxWhy from "./BoxText/BoxWhy"
 import { dataContent } from "@/app/uteis/DataContent"
 
 export default function ArticleH4 () {

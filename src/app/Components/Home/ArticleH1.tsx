@@ -1,8 +1,6 @@
 import { imagens } from "@/app/uteis/helper";
 import Image from "next/image";
-import homeContext from "@/app/Context/homeContext";
-import React, { useContext, useState } from "react";
-import { type } from "os";
+import React, { useState } from "react";
 
 
 type CycleProps = {
@@ -63,7 +61,7 @@ export default function ArticleH1 () {
                         <h2 className="title1">Ciclo da Saúde Mental</h2>
                         <h3 className="title2">A inteligência artificial traz uma nova era da medicina.</h3>
                     </div>
-                    <div className="box_artucle_link">
+                    <div className="box_article_link">
                         <div className="box_link">
                             <div className="link">
                                 <div className="box_img">
@@ -109,7 +107,7 @@ export default function ArticleH1 () {
                                     <p className="want">Quero experimentar</p>
                                 </div>
                             </div>
-                            <div>
+                            <div className="box_hand_phone">
                                 <Image src={imagens.Hand_Phone} alt='Hand Phone' width={530} height={550} className="hand_phone"/>
                             </div>
                         </div>

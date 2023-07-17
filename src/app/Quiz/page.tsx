@@ -18,6 +18,7 @@ import Quiz_11 from '../Components/Quiz/Quiz_11'
 import Quiz_12 from '../Components/Quiz/Quiz_12'
 import quizContext from '../Context/quizContext'
 import Quiz_Result from '../Components/Quiz/Quiz_Result';
+import { dataQuiz } from '../uteis/DataContent';
 
 export default function Quiz() {
 
@@ -77,7 +78,7 @@ export default function Quiz() {
         value={{getCurrently, setCurrently, getAnsewers1, setAnsewers1, getAnsewers2, setAnsewers2, getAnsewers3, setAnsewers3, getAnsewers4, setAnsewers4, getAnsewers5, setAnsewers5, getAnsewers6, setAnsewers6, getAnsewers7, setAnsewers7, getAnsewers8, setAnsewers8, getAnsewers9, setAnsewers9, getAnsewers10, setAnsewers10, getAnsewers11, setAnsewers11, getAnsewers12, setAnsewers12,getAnsewers13, setAnsewers13}}
       >
         <Header/>
-        <Article01/>
+        <Article01 data={dataQuiz}/>
         {setQuiz()}
         <Footer/>
       </quizContext.Provider>

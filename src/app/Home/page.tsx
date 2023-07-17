@@ -10,12 +10,13 @@ import ArticleH6 from '../Components/Home/ArticleH6';
 import ArticleH7 from '../Components/Home/ArticleH7';
 import ArticleH8 from '../Components/Home/ArticleH8';
 import Footer from '../Components/Quiz/Footer';
+import { datahome } from '../uteis/DataContent';
 
 export default function Home() {
   return (
     <>
         <Header/>
-        <Article01/>
+        <Article01 data={datahome}/>
         <ArticleH1/>
         <ArticleH2/>
         <ArticleH3/>

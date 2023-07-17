@@ -1,5 +1,7 @@
 import { imagens } from "@/app/uteis/helper";
 import Image from "next/image";
+import { datatestemony } from "@/app/uteis/DataContent";
+import BoxTestemony from "./BoxText/BoxTestemony";
 
 export default function ArticleH5 () {
     return(
@@ -11,66 +13,7 @@ export default function ArticleH5 () {
                             <h3 className="text_articleh5">A inteligência artificial traz uma nova era da medicina.</h3>
                         </div>
                         <div className="box_testimony">
-                            <div className="box_msg">
-                                <div className="box_img_testimony">
-                                    <Image src={imagens.Talk_1} alt='Talk_1' width={30} height={30} className="talk"/>
-                                </div>
-                                <div className="star" >
-                                    <Image src={imagens.Star_1} alt='Star_1' width={22} height={22} />
-                                </div>
-                                <div className="box_text_testimony">
-                                    <p className="title_name">Juliana Ferreira Assis</p>
-                                    <p className="testimony">Por meio de algoritmos avançados e análise Por meio de algoritmos avançados e análise Por meio de algoritmos avançados e análise.</p>
-                                </div>
-                            </div>
-                            <div className="box_msg">
-                                <div className="box_img_testimony">
-                                    <Image src={imagens.Talk_1} alt='Talk_1' width={30} height={30} className="talk"/>
-                                </div>
-                                <div className="star" >
-                                    <Image src={imagens.Star_1} alt='Star_1' width={22} height={22} />
-                                </div>
-                                <div className="box_text_testimony">
-                                    <p className="title_name">Juliana Ferreira Assis</p>
-                                    <p className="testimony">Por meio de algoritmos avançados e análise Por meio de algoritmos avançados e análise Por meio de algoritmos avançados e análise.</p>
-                                </div>
-                            </div>
-                            <div className="box_msg">
-                                <div className="box_img_testimony">
-                                    <Image src={imagens.Talk_1} alt='Talk_1' width={30} height={30} className="talk"/>
-                                </div>
-                                <div className="star" >
-                                    <Image src={imagens.Star_1} alt='Star_1' width={22} height={22} />
-                                </div>
-                                <div className="box_text_testimony">
-                                    <p className="title_name">Juliana Ferreira Assis</p>
-                                    <p className="testimony">Por meio de algoritmos avançados e análise Por meio de algoritmos avançados e análise Por meio de algoritmos avançados e análise.</p>
-                                </div>
-                            </div>
-                            <div className="box_msg">
-                                <div className="box_img_testimony">
-                                    <Image src={imagens.Talk_2} alt='Talk_2' width={30} height={30} className="talk2"/>
-                                </div>
-                                <div className="star" >
-                                    <Image src={imagens.Star_1} alt='Star_1' width={22} height={22} />
-                                </div>
-                                <div className="box_text_testimony">
-                                    <p className="title_name">Juliana Ferreira Assis</p>
-                                    <p className="testimony">Por meio de algoritmos avançados e análise Por meio de algoritmos avançados e análise Por meio de algoritmos avançados e análise.</p>
-                                </div>
-                            </div>
-                            <div className="box_msg">
-                                <div className="box_img_testimony">
-                                    <Image src={imagens.Talk_2} alt='Talk_2' width={30} height={30} className="talk2"/>
-                                </div>
-                                <div className="star" >
-                                    <Image src={imagens.Star_1} alt='Star_1' width={22} height={22} />
-                                </div>
-                                <div className="box_text_testimony">
-                                    <p className="title_name">Juliana Ferreira Assis</p>
-                                    <p className="testimony">Por meio de algoritmos avançados e análise Por meio de algoritmos avançados e análise Por meio de algoritmos avançados e análise.</p>
-                                </div>
-                            </div>
+                            <BoxTestemony data={datatestemony}/>
                             <div className="box_msg_p">
                                 <div className="box_img_testimony">
                                     <Image src={imagens.Talk_2} alt='Talk_2' width={30} height={30} className="talk2"/>
