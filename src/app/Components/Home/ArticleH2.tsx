@@ -11,7 +11,9 @@ export default function ArticleH2 () {
                     <div>
                         <Image src={imagens.Therapy_1} alt='Therapy_2' width={650} height={450} className="img_therapy"/>
                     </div>
-                    <BoxPercentage data={dataPercentage}/>
+                    <div className="box_percent">
+                        <BoxPercentage data={dataPercentage}/>
+                    </div>
                 </div>
             </article>
         </>

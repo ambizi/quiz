@@ -29,7 +29,7 @@ export default function Article01 ({data}: dataType) {
           <article className='art1'>
             <div className='box2'>
               <div className='art1_box_text'>
-                <h1>{data.subtitle}</h1>
+                <h1 className='h1'>{data.subtitle}</h1>
                 <h2 className='text1'>{data.title}</h2>
                 <p className='text2'>{data.text}</p>
                 {changeSet()}

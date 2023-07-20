@@ -1,7 +1,6 @@
-import Image from "next/image"
-import { imagens } from "@/app/uteis/helper"
 import { dataprofessionals } from "@/app/uteis/DataContent"
 import BoxProfessionals from "./BoxText/BoxProfessionals"
+
 
 
 export default function ArticleH6 () {

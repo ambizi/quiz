@@ -16,12 +16,11 @@ function BoxPercentage ({data}: dataType) {
         <>
             {data.map((names)=>{
                 return (
-                            <div className="box_percent">
-                                <div className="box_analysis">
-                                    <p className="number_blue"><span className="simbol_h2">+</span>{names.percentile}</p>
-                                    <p className="text_blue">{names.text}</p>
-                                </div>
-                            </div>
+                        <div className="box_analysis">
+                            <p className="number_blue"><span className="simbol_h2">+</span>{names.percentile}</p>
+                            <p className="text_blue">{names.text}</p>
+                        </div>
+                          
                         )
                     }
                 )

@@ -13,10 +13,6 @@
     src: url('/font/FiraSansCondensed-Medium.ttf') format('truetype');
 }
 
-*{
-margin: 0px;
-padding: 0px;
-}
 
 
 /*//////////////////////HEADER//////////////////////////////////*/
@@ -27,12 +23,12 @@ width: 1280px;
 overflow: hidden;
 }
 
-header{
+.header{
 background-color: #F5F5F5;
 padding-top: 10px;
 }
 
-menu{
+.box_menu{
 max-width: 98vw;
 display: flex;
 justify-content: space-between;
@@ -86,7 +82,7 @@ padding-top: 150px;
 padding-bottom: 100px;
 }
 
-h1{
+.h1{
 color: #7bacf4;
 font-family: 'Outfit-Medium';
 font-weight: normal;
@@ -361,8 +357,6 @@ font-family: 'Outfit-Regular';
 }
 
 
-
-
 /*//////////////////////FOOTER//////////////////////////////////*/
 
 .box4{
@@ -449,12 +443,13 @@ padding-bottom: 30px;
 padding-top: 15px;
 }
 
-
+/*//////////////////////////////////MOBILE/////////////////////////////////////*/
+/*//////////////////////////////////MOBILE/////////////////////////////////////*/
 /*//////////////////////////////////MOBILE/////////////////////////////////////*/
 
 @media (max-width: 540px) {
 
-html, body{width: 375px;}
+
 
 .tab{
     display: none;

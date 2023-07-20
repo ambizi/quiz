@@ -20,7 +20,7 @@ function BoxWhy({data}: Datatype){
         {data.map( (names, index) => {
             const newIndex = index + 1
             return(
-                <div className="box_data" key={index} style={ quantity === newIndex ? {  borderBottom: '1px solid #fff' } : { borderBottom: '1px solid #c2c2c2'}}>
+                <div className="box_data" key={index} style={ quantity === newIndex ? {  borderBottom: '1px solid #fff', width: '100%' } : { borderBottom: '1px solid #c2c2c2', width: '100%'}}>
                     <div className="box_data_number">
                         <p className="data_number"><span className="simbol_h4">+</span>{names.percentage}%</p>
                         <p className="data_number_text">{names.title}</p>

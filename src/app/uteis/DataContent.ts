@@ -1,3 +1,5 @@
+import { imagens } from "./helper"
+
 export const dataContent = [
     {
         percentage: 71,
@@ -83,7 +85,7 @@ export const dataprofessionals = [
         data1: 'De melhora clínica dos colaboradores após a conclusão do programa.',
         percetage2: 71,
         data2: 'De melhora clínica dos colaboradores após a conclusão do programa.',
-        img: 'Psicólogos'
+        img: imagens.Profession1
     },
     {
         professionals: 'Psiquiatras',
@@ -92,7 +94,7 @@ export const dataprofessionals = [
         data1: 'De melhora clínica dos colaboradores após a conclusão do programa.',
         percetage2: 71,
         data2: 'De melhora clínica dos colaboradores após a conclusão do programa.',
-        img: 'Psiquiatras'
+        img: imagens.Profession2
     },
     {
         professionals: 'Terapeutas Ocupacionais',
@@ -101,6 +103,6 @@ export const dataprofessionals = [
         data1: 'De melhora clínica dos colaboradores após a conclusão do programa.',
         percetage2: 71,
         data2: 'De melhora clínica dos colaboradores após a conclusão do programa.',
-        img: 'Terapeutas Ocupacionais'
+        img: imagens.Profession3
     },
 ]    

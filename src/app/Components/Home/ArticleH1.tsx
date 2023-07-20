@@ -10,8 +10,8 @@ type CycleProps = {
 }
 
 
-export default function ArticleH1 () {
-    
+export default function ArticleH1() {
+
 
     const cycle = [
         {
@@ -37,24 +37,24 @@ export default function ArticleH1 () {
     ]
 
 
-    const [getCurrently, setCurrently] = useState <number>(1)
-    const [getcycle, setCycle] = useState <CycleProps | undefined> (inicialValue())
-    
+    const [getCurrently, setCurrently] = useState<number>(1)
+    const [getcycle, setCycle] = useState<CycleProps | undefined>(inicialValue())
 
-    function inicialValue () {
-        const search = cycle.find(({id}) => id === Number(getCurrently))
+
+    function inicialValue() {
+        const search = cycle.find(({ id }) => id === Number(getCurrently))
         return search
     }
 
-    function registerButton ( but: number){
+    function registerButton(but: number) {
         setCurrently(but)
-        const search = cycle.find(({id}) => id === Number(but))
+        const search = cycle.find(({ id }) => id === Number(but))
         setCycle(search)
     }
-      
 
-    return(
-        <>  
+
+    return (
+        <>
             <article className="articleh1">
                 <div className="box_article1">
                     <div className="article_title">
@@ -68,28 +68,28 @@ export default function ArticleH1 () {
                                     <p className="number">1</p>
                                     <Image src={imagens.Bipolar} alt='Bipolar' width={50} height={50} />
                                 </div>
-                                <p className="bipolar" onClick={e=>registerButton(1)}>Triagem</p>
+                                <p className="bipolar" onClick={e => registerButton(1)}>Triagem</p>
                             </div>
                             <div className="link">
                                 <div className="box_img">
                                     <p className="number">2</p>
                                     <Image src={imagens.Therapy} alt='Therapy' width={50} height={50} />
                                 </div>
-                                <p className="therapy" onClick={e=>registerButton(2)}>Atendimento</p>
+                                <p className="therapy" onClick={e => registerButton(2)}>Atendimento</p>
                             </div>
                             <div className="link">
                                 <div className="box_img">
                                     <p className="number">3</p>
                                     <Image src={imagens.Growing} alt='Growing' width={50} height={50} />
                                 </div>
-                                <p className="growing" onClick={() =>registerButton(3)}>Acompanhamento</p>
+                                <p className="growing" onClick={() => registerButton(3)}>Acompanhamento</p>
                             </div>
                             <div className="link">
                                 <div className="box_img">
                                     <p className="number">4</p>
                                     <Image src={imagens.Goal} alt='Goal' width={50} height={50} />
                                 </div>
-                                <p className="goal"onClick={()=>registerButton(4)}>Redefinição</p>
+                                <p className="goal" onClick={() => registerButton(4)}>Redefinição</p>
                             </div>
                         </div>
                         <div className="box_link_text">
@@ -108,7 +108,7 @@ export default function ArticleH1 () {
                                 </div>
                             </div>
                             <div className="box_hand_phone">
-                                <Image src={imagens.Hand_Phone} alt='Hand Phone' width={530} height={550} className="hand_phone"/>
+                                <Image src={imagens.Hand_Phone} alt='Hand Phone' width={530} height={550} className="hand_phone" />
                             </div>
                         </div>
                     </div>
