@@ -430,6 +430,7 @@ h1{
     border: none;
     border-radius: 5px;
     padding: 18px 30px;
+    text-decoration: none;
 }
 
 .arrow_blue{
@@ -541,6 +542,7 @@ h1{
 
 
 /*//////////////////////ARTICLE5H//////////////////////////////////*/
+
 
 
 .articleh5{
@@ -677,6 +679,7 @@ h1{
     flex-direction: column;
     padding-top: 100px;
     padding-bottom: 100px;
+    overflow: hidden;
 }
 
 
@@ -684,7 +687,7 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 50px;
+    padding-bottom: 50px; 
 }
 
 
@@ -696,6 +699,8 @@ h1{
     padding-bottom: 15px;
 }
 
+
+
 .titleh6_2{
     font-size: 1.45em;
     color: #6A6A6A;
@@ -703,6 +708,11 @@ h1{
     font-weight: normal;
 }
 
+
+.slick-slide{
+    display: flex;
+    width: 100%; 
+}
 
 .box_professions{
     display: flex;
@@ -712,10 +722,16 @@ h1{
     align-items: center;
 }
 
+.box_conteinerh6{
+    width: 100%;
+    overflow: hidden;
+}
+
 .img_articleh6{
     display: flex;
     justify-content: left;
     padding-left: 5px;
+    flex: 1 1 0%
 }
 
 .box_profession{
@@ -723,6 +739,7 @@ h1{
     flex-direction: column;
     justify-content: space-between;
     padding-left: 75px;
+    flex: 1 1 0%
 }
 
 .title_profession{
@@ -1070,6 +1087,12 @@ h1{
     width: 100%;
 }
 
+/*////////////////Article1//////////////////////////////*/
+
+.art1{
+    width: 100%;
+}
+
 /*////////////////ArticleH1//////////////////////////////*/
 
 .box_article1{
@@ -1179,9 +1202,29 @@ h1{
 }
 
 .box_testimony{
+    max-width: 100%;
+    overflow: hidden;
     margin-left: 20px;
     margin-right: 20px;
+    display: flex;
+    flex-direction: row;
 }
+
+.box_msg{
+    max-width: 100% !important;
+    overflow: hidden !important;
+}
+
+.box_text_testimony{
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slick-slide{
+    max-width: 100%;
+    overflow: hidden;
+}
+
 
 /*//////////////////////ArticleH6//////////////////////////////*/
 
@@ -1229,13 +1272,17 @@ h1{
     overflow: hidden;
 }
 
-/*//////////////////////ArticleH8//////////////////////////////*/
+/*//////////////////////FOOTER//////////////////////////////*/
+
+
+.art3{
+    width: 100%;
+}
 
 .box4{
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 0px;
 }
-
 
 }
 
@@ -1539,7 +1586,7 @@ h1{
 .box_testimony{
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
 }
 
@@ -1549,6 +1596,10 @@ h1{
 
 .box_msg_p{
     width: 90%;
+}
+
+.slick-slide{
+    max-width: 100%;
 }
 
 

@@ -1,6 +1,7 @@
 import BoxWhy from "./BoxText/BoxWhy"
 import { dataContent } from "@/app/uteis/DataContent"
 
+
 export default function ArticleH4 () {
     return(
         <>
@@ -10,7 +11,9 @@ export default function ArticleH4 () {
                         <h2 className="articleh4_title">Por que usamos Inteligência Artificial</h2>
                         <h3 className="articleh4_title2">A inteligência artificial traz uma nova era da medicina.</h3>
                     </div>
-                    <BoxWhy data={dataContent} />
+                    <div>
+                        <BoxWhy data={dataContent} />
+                    </div>
                 </div>
             </article>
         </>

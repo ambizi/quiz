@@ -1,5 +1,4 @@
 "use client"; 
-import styles from './Quiz.module.css'
 import React, { useState } from 'react'
 import Header from '../Components/Quiz/Header'
 import Article01 from '../Components/Quiz/Article01'

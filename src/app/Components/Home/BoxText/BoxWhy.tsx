@@ -1,5 +1,8 @@
 import Image from "next/image"
 import { imagens } from "@/app/uteis/helper"
+import Carousel from "../../Functions/carousel"
+import React, { useState } from "react"
+
 
 /*Tipifica o dataContent*/
 export type BoxWhyType = {
@@ -13,27 +16,57 @@ type Datatype = {
     data: BoxWhyType[]
 }
 
-function BoxWhy({data}: Datatype){
-    const quantity = data.length
-    return ( 
+function BoxWhy({ data }: Datatype) {
+
+    const [whidthWindow, setWhidthWindow] = useState(window.innerWidth);
+
+    function ChangeWhidt() {
+        if (whidthWindow <= 540) {
+            return <>
+                <Carousel>
+                    {data.map((names) => {
+                        return <div className="box_data">
+                            <div className="box_data_number">
+                                <p className="data_number"><span className="simbol_h4">+</span>{names.percentage}%</p>
+                                <p className="data_number_text">{names.title}</p>
+                            </div>
+                            <div className="box_text_data">
+                                <Image src={imagens.Check} alt='Check' width={30} height={30} />
+                                <p className="text_data">{names.content}</p>
+                            </div>
+                        </div>
+                    }
+                    )
+                    }
+                </Carousel>
+            </>
+        } else if (whidthWindow > 540) {
+            const quantity = data.length
+            return <>
+                {data.map((names, index) => {
+                    const newIndex = index + 1
+                    return (
+                        <div className="box_data" key={index} style={quantity === newIndex ? { borderBottom: '1px solid #fff', width: '100%' } : { borderBottom: '1px solid #c2c2c2', width: '100%' }}>
+                            <div className="box_data_number">
+                                <p className="data_number"><span className="simbol_h4">+</span>{names.percentage}%</p>
+                                <p className="data_number_text">{names.title}</p>
+                            </div>
+                            <div className="box_text_data">
+                                <Image src={imagens.Check} alt='Check' width={30} height={30} />
+                                <p className="text_data">{names.content}</p>
+                            </div>
+                        </div>
+                    )
+                }
+                )
+                }
+            </>
+        }
+    }
+    return (
         <>
-        {data.map( (names, index) => {
-            const newIndex = index + 1
-            return(
-                <div className="box_data" key={index} style={ quantity === newIndex ? {  borderBottom: '1px solid #fff', width: '100%' } : { borderBottom: '1px solid #c2c2c2', width: '100%'}}>
-                    <div className="box_data_number">
-                        <p className="data_number"><span className="simbol_h4">+</span>{names.percentage}%</p>
-                        <p className="data_number_text">{names.title}</p>
-                    </div>
-                    <div className="box_text_data">
-                        <Image src={imagens.Check} alt='Check' width={30} height={30}/>
-                        <p className="text_data">{names.content}</p>
-                    </div>
-                </div>
-            )
-        })}
+            {ChangeWhidt()}
         </>
     )
 }
-
 export default BoxWhy

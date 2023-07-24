@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { imagens } from "@/app/uteis/helper"
-
+import Carousel from "../Functions/carousel"
 
 export default function ArticleH8 () {
     return (

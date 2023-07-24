@@ -1,4 +1,6 @@
 import Image from "next/image"
+import Carousel from "../../Functions/carousel"
+import React, { useState } from "react"
 
 type BoxProfessionalsProps = {
     professionals: string,
@@ -11,36 +13,71 @@ type BoxProfessionalsProps = {
 }
 
 type DataType = {
-    data: BoxProfessionalsProps []
+    data: BoxProfessionalsProps[]
 }
 
-function BoxProfessionals ({data}: DataType) {
-    return(
-        <>
-            {data.map((names)=>{
-                return <div className="box_professions">
-                            <hr className="line"/>
-                            <Image className="img_articleh6" src={names.img} alt="Img" width={550} height={500}/>
-                            <div className="box_profession">
-                                <div className="box_texth6">
-                                    <h3 className="title_profession">{names.professionals}</h3>
-                                    <p className="text_profession">{names.text}</p>
-                                </div>
-                                <div className="data_box_articleh6">
-                                    <div className="data_1">
-                                        <p className="number_data_articleh6"><span className="simbol_h6">+</span>{names.percetage1}</p>
-                                        <p className="text_data_h6">{names.data1}</p>
+function BoxProfessionals({ data }: DataType) {
+    const [larguraJanela, setLarguraJanela] = useState(window.innerWidth);
+    function whidthWindow() {
+        if (larguraJanela <= 540) {
+            return <>
+                <Carousel>
+                    {data.map((names) => {
+                        return <div className="box_professions">
+                                    <Image className="img_articleh6" src={names.img} alt="Img" width={562} height={561} />
+                                    <div className="box_profession">
+                                        <div className="box_texth6">
+                                            <h3 className="title_profession">{names.professionals}</h3>
+                                            <p className="text_profession">{names.text}</p>
+                                        </div>
+                                        <div className="data_box_articleh6">
+                                            <div className="data_1">
+                                                <p className="number_data_articleh6"><span className="simbol_h6">+</span>{names.percetage1}</p>
+                                                <p className="text_data_h6">{names.data1}</p>
+                                            </div>
+                                            <div className="data_2">
+                                                <p className="number_data_articleh6"><span className="simbol_h6">+</span>{names.percetage2}</p>
+                                                <p className="text_data_h6">{names.data2}</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className="data_2">
-                                        <p className="number_data_articleh6"><span className="simbol_h6">+</span>{names.percetage2}</p>
-                                        <p className="text_data_h6">{names.data2}</p>
+                                </div>
+                            }
+                    )
+                    }
+                </Carousel>
+            </>
+        } else if (larguraJanela > 540) {
+            return <>
+                {data.map((names) => {
+                    return <div className="box_professions">
+                                <Image className="img_articleh6" src={names.img} alt="Img" width={562} height={561} />
+                                <div className="box_profession">
+                                    <div className="box_texth6">
+                                        <h3 className="title_profession">{names.professionals}</h3>
+                                        <p className="text_profession">{names.text}</p>
+                                    </div>
+                                    <div className="data_box_articleh6">
+                                        <div className="data_1">
+                                            <p className="number_data_articleh6"><span className="simbol_h6">+</span>{names.percetage1}</p>
+                                            <p className="text_data_h6">{names.data1}</p>
+                                        </div>
+                                        <div className="data_2">
+                                            <p className="number_data_articleh6"><span className="simbol_h6">+</span>{names.percetage2}</p>
+                                            <p className="text_data_h6">{names.data2}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    }
+                }
                 )
-            }
+                }
+            </>
+        }
+    }
+    return (
+        <>
+            {whidthWindow()}
         </>
     )
 } export default BoxProfessionals

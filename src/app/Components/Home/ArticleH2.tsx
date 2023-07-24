@@ -1,7 +1,7 @@
 import { imagens } from "@/app/uteis/helper";
 import Image from "next/image";
 import { dataPercentage} from "@/app/uteis/DataContent";
-import BoxPercentage, {BoxPercentageType} from "./BoxText/BoxPercentage";
+import BoxPercentage from "./BoxText/BoxPercentage";
 
 export default function ArticleH2 () {
     return(
